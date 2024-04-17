@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Auth\LogoutController;
 use App\Http\Controllers\Admin\Dashboard\DashboardController;
 use App\Http\Controllers\Admin\Profile\ProfileController;
+use App\Http\Controllers\TestController;
 
 Route::prefix('/admin')->name('admin.')->group(function () {
     // Authentication routes
@@ -18,5 +19,6 @@ Route::prefix('/admin')->name('admin.')->group(function () {
         Route::get('/', [Analytics::class, 'index'])->name('dashboard');
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('profile', ProfileController::class);
+        Route::get('/test', [TestController::class, 'index']);
     });
 });
