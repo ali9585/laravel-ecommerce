@@ -21,8 +21,11 @@
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h5 class="mb-0">Update Profile</h5>
                 </div>
+                @include('admin._partials.alert')
                 <div class="card-body">
-                    <form>
+                    <form action="{{ route('admin.profile.update', auth()->guard('admin')->user()->id) }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
                         <div class="mb-3">
                             <div class="d-flex justify-content-center">
                                 <div class="p-img-upload">
@@ -37,33 +40,29 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="name">Full Name</label>
-                            <input type="text" class="form-control" id="name" value="{{ auth()->guard('admin')->user()->name }}">
+                            <input type="text" class="form-control" id="name" name="name" value="{{ auth()->guard('admin')->user()->name }}">
+                            {{ error('name') }}
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="email">Email</label>
-                            <input type="text" class="form-control" id="email" value="{{ auth()->guard('admin')->user()->email }}">
+                            <input type="text" class="form-control" id="email" name="email" value="{{ auth()->guard('admin')->user()->email }}">
+                            {{ error('email') }}
                         </div>
                         <div class="mb-3">
                             <label class="form-label" for="current_password">Current Password</label>
-                            <div class="input-group input-group-merge">
-                                <input type="current_password" id="current_password" class="form-control">
-                                <span class="input-group-text" id="current_password2">@example.com</span>
-                            </div>
+                            <input type="password" id="current_password" name="current_password" class="form-control">
                             <div class="form-text">Leave empty if you dont want to update</div>
+                            {{ error('current_password') }}
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="new_password">New Password</label>
-                            <div class="input-group input-group-merge">
-                                <input type="new_password" id="new_password" class="form-control">
-                                <span class="input-group-text" id="new_password2">@example.com</span>
-                            </div>
+                            <label class="form-label" for="password">New Password</label>
+                            <input type="password" id="password" name="password" class="form-control" autocomplete="new-password">
+                            {{ error('password') }}
                         </div>
                         <div class="mb-3">
-                            <label class="form-label" for="confirm_new_password">Confirm New Password</label>
-                            <div class="input-group input-group-merge">
-                                <input type="confirm_new_password" id="confirm_new_password" class="form-control">
-                                <span class="input-group-text" id="confirm_new_password2">@example.com</span>
-                            </div>
+                            <label class="form-label" for="password_confirmation">Confirm New Password</label>
+                            <input type="password" id="password_confirmation" name="password_confirmation" class="form-control">
+                            {{ error('password_confirmation') }}
                         </div>
                         <input type="file" class="visually-hidden p-img-file" name="image">
                         <button type="submit" class="btn btn-primary">Save</button>
