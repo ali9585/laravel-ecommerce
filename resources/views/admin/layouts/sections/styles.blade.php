@@ -7,11 +7,16 @@
 <link rel="stylesheet" href="{{ asset(mix('assets/vendor/fonts/boxicons.css')) }}" />
 
 <!-- Core CSS -->
-<link rel="stylesheet" href="{{ asset(mix('assets/vendor/css/core.css')) }}" />
+{{-- <link rel="stylesheet" href="{{ asset(mix('assets/vendor/css/core.css')) }}" /> --}}
 <link rel="stylesheet" href="{{ asset(mix('assets/vendor/css/theme-default.css')) }}" />
 <link rel="stylesheet" href="{{ asset(mix('assets/css/demo.css')) }}" />
 <!-- Vendors CSS -->
 <link rel="stylesheet" href="{{ asset(mix('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')) }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/core.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/theme-default.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/datatables.bootstrap5.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.bootstrap5.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/buttons.bootstrap5.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
 <!-- Vendor Styles -->

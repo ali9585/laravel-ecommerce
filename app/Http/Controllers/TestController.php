@@ -9,6 +9,6 @@ class TestController extends Controller
 {
     public function index(AdminsDataTable $table)
     {
-        return $table->render('admin.content.test.index', ['dataTable' => $table]);
+        return $table->render('admin.content.test.index');
     }
 }

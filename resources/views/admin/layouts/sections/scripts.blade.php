@@ -9,6 +9,7 @@
 <!-- BEGIN: Theme JS-->
 <script src="{{ asset(mix('assets/js/main.js')) }}"></script>
 <script src="{{ asset('assets/js/main-2.js') }}"></script>
+<script src="{{ asset('assets/js/app-ecommerce-product-list.js') }}"></script>
 
 <!-- END: Theme JS-->
 <!-- Pricing Modal JS-->

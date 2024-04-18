@@ -23,7 +23,9 @@ class AdminsDataTable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('action', 'admins.action')
+            ->addColumn('action', function($user) {
+                return '<a href="/">Click</a>';
+            })
             ->setRowId('id');
     }
 
@@ -49,16 +51,15 @@ class AdminsDataTable extends DataTable
                     ->setTableId('admins-table')
                     ->columns($this->getColumns())
                     ->minifiedAjax()
-                    //->dom('Bfrtip')
+                    ->dom('lBfrtip')
                     ->orderBy(1)
                     ->selectStyleSingle()
                     ->buttons([
                         Button::make('excel'),
                         Button::make('csv'),
-                        Button::make('pdf'),
                         Button::make('print'),
                         Button::make('reset'),
-                        Button::make('reload')
+                        Button::make('reload'),
                     ]);
     }
 
@@ -70,15 +71,15 @@ class AdminsDataTable extends DataTable
     public function getColumns(): array
     {
         return [
-            Column::computed('action')
-                  ->exportable(false)
-                  ->printable(false)
-                  ->width(60)
-                  ->addClass('text-center'),
             Column::make('id'),
             Column::make('name'),
             Column::make('created_at'),
             Column::make('updated_at'),
+            Column::computed('action')
+            ->exportable(false)
+            ->printable(false)
+            ->width(60)
+            ->addClass('text-center'),
         ];
     }
 
@@ -89,6 +90,6 @@ class AdminsDataTable extends DataTable
      */
     protected function filename(): string
     {
-        return 'Admins_' . date('YmdHis');
+        return 'Admins';
     }
 }
