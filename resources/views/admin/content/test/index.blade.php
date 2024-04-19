@@ -150,26 +150,26 @@
                         </div>
                     </div>
                 </div>
-                <table class="datatables-products table border-top dataTable no-footer dtr-column" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" style="width: 1014px;">
+                <table class="datatables-products table border-top dataTable no-footer dtr-column" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" style="width: 1391px;">
                     <thead>
                         <tr>
-                            <th class="control sorting_disabled dtr-hidden" rowspan="1" colspan="1" style="width: 6px; display: none;" aria-label=""></th>
+                            <th class="control sorting_disabled dtr-hidden" rowspan="1" colspan="1" style="width: 0px; display: none;" aria-label=""></th>
                             <th class="sorting_disabled dt-checkboxes-cell dt-checkboxes-select-all" rowspan="1" colspan="1" style="width: 18px;" data-col="1" aria-label=""><input
                                     type="checkbox" class="form-check-input"></th>
-                            <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 412px;"
+                            <th class="sorting sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 434px;"
                                 aria-label="product: activate to sort column descending" aria-sort="ascending">product</th>
-                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 129px;"
+                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 137px;"
                                 aria-label="category: activate to sort column ascending">category</th>
-                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 55px;" aria-label="stock">stock</th>
-                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 46px;"
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 60px;" aria-label="stock">stock</th>
+                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 51px;"
                                 aria-label="sku: activate to sort column ascending">sku</th>
-                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;"
+                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 81px;"
                                 aria-label="price: activate to sort column ascending">price</th>
-                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 36px;"
+                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 39px;"
                                 aria-label="qty: activate to sort column ascending">qty</th>
-                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;"
+                            <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 103px;"
                                 aria-label="status: activate to sort column ascending">status</th>
-                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 0px;" aria-label="Actions">Actions</th>
+                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 76px;" aria-label="Actions">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -180,7 +180,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-9"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-9"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -199,9 +199,8 @@
                             <td class="" style=""><span class="badge bg-label-danger" text-capitalized="">Inactive</span></td>
                             <td class="" style="">
                                 <div class="d-inline-block text-nowrap"><button class="btn btn-sm btn-icon"><i class="bx bx-edit"></i></button><button
-                                        class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false"><i
-                                            class="bx bx-dots-vertical-rounded me-2"></i></button>
-                                    <div class="dropdown-menu dropdown-menu-end m-0" style=""><a href="javascript:0;" class="dropdown-item">View</a><a href="javascript:0;"
+                                        class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded me-2"></i></button>
+                                    <div class="dropdown-menu dropdown-menu-end m-0"><a href="javascript:0;" class="dropdown-item">View</a><a href="javascript:0;"
                                             class="dropdown-item">Suspend</a></div>
                                 </div>
                             </td>
@@ -213,7 +212,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-13"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-13"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -246,7 +245,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-15"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-15"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -278,7 +277,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-5"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-5"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -311,7 +310,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-16"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-16"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -344,7 +343,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-18"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-18"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -377,7 +376,7 @@
                                 <div class="d-flex justify-content-start align-items-center product-name">
                                     <div class="avatar-wrapper">
                                         <div class="avatar avatar me-2 rounded-2 bg-label-secondary"><img
-                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-9.png" alt="Product-3"
+                                                src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/assets/img/ecommerce-images/product-15.png" alt="Product-3"
                                                 class="rounded-2"></div>
                                     </div>
                                     <div class="d-flex flex-column">
