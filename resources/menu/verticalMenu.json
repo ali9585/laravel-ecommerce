@@ -23,12 +23,12 @@
                 },
                 {
                     "url": "/admin/category",
-                    "name": "Categories",
+                    "name": "Category List",
                     "slug": "admin.category.index"
                 },
                 {
                     "url": "layouts/container",
-                    "name": "Collections",
+                    "name": "Collection List",
                     "slug": "layouts-container"
                 }
             ]
