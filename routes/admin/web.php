@@ -16,7 +16,7 @@ Route::prefix('/admin')->name('admin.')->group(function () {
 
     // Authenticated routes
     Route::middleware(['auth:admin'])->group(function () {
-        Route::get('/', [Analytics::class, 'index'])->name('dashboard');
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('profile', ProfileController::class);
         Route::get('/test', [TestController::class, 'index']);

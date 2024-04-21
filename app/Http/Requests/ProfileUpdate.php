@@ -27,8 +27,8 @@ class ProfileUpdate extends FormRequest
             'name' => 'required',
             'email' => 'required|email|unique:admins,email,' . $id,
             'current_password' => 'nullable|required_with:password|required_with:password_confirmation',
-            'password' => 'nullable|required_with:password|confirmed|min:6',
-            'password_confirmation' => 'required_with:password',
+            'password' => 'nullable|required_with:current_password|confirmed|min:6',
+            'password_confirmation' => 'required_with:current_password',
         ];
     }
 }
