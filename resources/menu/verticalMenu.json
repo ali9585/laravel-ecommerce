@@ -9,7 +9,7 @@
         {
             "name": "Products",
             "icon": "menu-icon tf-icons bx bx-store-alt",
-            "slug": "layouts",
+            "slug": "admin.category",
             "submenu": [
                 {
                     "url": "layouts/without-menu",
@@ -22,8 +22,13 @@
                     "slug": "layouts-without-navbar"
                 },
                 {
-                    "url": "layouts/container",
+                    "url": "/admin/category",
                     "name": "Categories",
+                    "slug": "admin.category.index"
+                },
+                {
+                    "url": "layouts/container",
+                    "name": "Collections",
                     "slug": "layouts-container"
                 }
             ]
