@@ -263,12 +263,15 @@
                     </div>
                     <div class="mb-3 fv-plugins-icon-container">
                         <label class="form-label" for="ecommerce-category-description">Description</label>
-                        <textarea id="ecommerce-category-description" class="form-control" placeholder="Enter description" aria-label="description" name="description"></textarea>
+                        <textarea id="ecommerce-category-description" class="form-control" placeholder="Enter description" aria-label="description" name="description" style="height: 100px;"></textarea>
                         <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label" for="ecommerce-category-image">Attachment</label>
-                        <input class="form-control" type="file" id="ecommerce-category-image">
+                        <label for="status" class="form-label">Status</label>
+                        <select class="form-select" id="status" aria-label="Default select example">
+                            <option value="1" selected>Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="ecommerce-category-image">Image</label>
@@ -276,10 +279,10 @@
                             <div class="dz-message needsclick">
                                 Drop files here or click to upload
                             </div>
-                            <div class="img-preview">
-                                <img src="https://demos.themeselection.com/sneat-bootstrap-html-admin-template-free/assets/img/elements/18.jpg" alt="">
-                                <input type="file" name="image" class="img-upload" id="image">
+                            <div class="img-preview" style="display: none;">
+                                <img src="" alt="">
                             </div>
+                            <input type="file" name="image" class="img-upload" id="image">
                         </div>
                     </div>
                     <div class="mb-3">
@@ -291,4 +294,8 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('page-script')
+    <script src="{{ asset('assets/js/category.js') }}"></script>
 @endsection
