@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin\Profile;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\MessageBag;
-use App\Http\Requests\ProfileUpdate;
+use App\Http\Requests\Admin\ProfileUpdate;
 use Illuminate\Http\Request;
 use App\Models\Admin;
 

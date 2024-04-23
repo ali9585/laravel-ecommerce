@@ -23,3 +23,7 @@ Route::prefix('/admin')->name('admin.')->group(function () {
         Route::resource('category', CategoryController::class);
     });
 });
+
+Route::get('/test', function() {
+    return response()->json(['success' => true, 'message' => 'working']);
+});
