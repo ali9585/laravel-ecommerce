@@ -4,14 +4,17 @@ namespace App\Http\Controllers\Admin\Category;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        // if ($request->has('isPage'))
+        //     return 'is page';
         return view('admin.category.index');
     }
 
@@ -28,7 +31,23 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'image' => 'mimes:jpeg,png,webp'
+        ]);
+
+        $category = new Category;
+        $category->name = $request->name;
+        $category->description = $request->description ?? '';
+        $category->status = $request->status;
+
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('images/category', 'public');
+            $category->image = asset('storage/' . $path);
+        }
+
+        $category->save();
+        return response(['message' => 'Category successfully added.']);
     }
 
     /**

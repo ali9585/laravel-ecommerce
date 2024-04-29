@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
 use App\Http\Controllers\Admin\Auth\LoginController;
@@ -22,8 +23,4 @@ Route::prefix('/admin')->name('admin.')->group(function () {
         Route::resource('profile', ProfileController::class);
         Route::resource('category', CategoryController::class);
     });
-});
-
-Route::get('/test', function() {
-    return response()->json(['success' => true, 'message' => 'working']);
 });

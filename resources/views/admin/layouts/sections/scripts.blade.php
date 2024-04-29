@@ -7,6 +7,12 @@
 @yield('vendor-script')
 <!-- END: Page Vendor JS-->
 <!-- BEGIN: Theme JS-->
+<script>
+    var token = $("meta[name='csrf-token']").attr("content");
+    $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
+        jqXHR.setRequestHeader('X-CSRF-Token', token);
+    });
+</script>
 <script src="{{ asset(mix('assets/js/main.js')) }}"></script>
 <script src="{{ asset('assets/js/main-2.js') }}"></script>
 <script src="{{ asset('assets/js/app-ecommerce-product-list.js') }}"></script>

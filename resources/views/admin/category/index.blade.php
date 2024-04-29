@@ -255,23 +255,25 @@
                 <button type="button" class="btn-close bg-label-secondary text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body border-top">
-                <form class="pt-0 fv-plugins-bootstrap5 fv-plugins-framework" id="eCommerceCategoryListForm" onsubmit="return true" novalidate="novalidate">
+                <div class="alert-wrapper"></div>
+                <form class="pt-0 fv-plugins-bootstrap5 fv-plugins-framework" id="add-category-form" novalidate="novalidate">
                     <div class="mb-3 fv-plugins-icon-container">
-                        <label class="form-label" for="ecommerce-category-name">Name</label>
-                        <input type="text" class="form-control" id="ecommerce-category-name" placeholder="Enter category name" name="categoryname" aria-label="category name">
-                        <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter category name" name="name" aria-label="category name">
+                        <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback name-error"></div>
                     </div>
                     <div class="mb-3 fv-plugins-icon-container">
-                        <label class="form-label" for="ecommerce-category-description">Description</label>
-                        <textarea id="ecommerce-category-description" class="form-control" placeholder="Enter description" aria-label="description" name="description" style="height: 100px;"></textarea>
-                        <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                        <label class="form-label" for="description">Description</label>
+                        <textarea id="description" class="form-control" placeholder="Enter description" aria-label="description" name="description" style="height: 100px;"></textarea>
+                        <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback description-error"></div>
                     </div>
                     <div class="mb-3">
                         <label for="status" class="form-label">Status</label>
-                        <select class="form-select" id="status" aria-label="Default select example">
-                            <option value="1" selected>Active</option>
-                            <option value="0">Inactive</option>
+                        <select class="form-select" id="status" name="status" aria-label="Default select example">
+                            <option value="active" selected>Active</option>
+                            <option value="inactive">Inactive</option>
                         </select>
+                        <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback status-error"></div>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="ecommerce-category-image">Image</label>
@@ -284,6 +286,7 @@
                             </div>
                             <input type="file" name="image" class="img-upload" id="image">
                         </div>
+                        <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback image-error"></div>
                     </div>
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary me-sm-3 me-1 data-submit">Add</button>
